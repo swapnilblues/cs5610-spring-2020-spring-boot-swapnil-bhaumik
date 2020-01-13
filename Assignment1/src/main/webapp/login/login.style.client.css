@@ -2,3 +2,7 @@ h1 {
     color: white;
     background-color: black;
 }
+
+.container {
+    max-width: 800px;
+}
