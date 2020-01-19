@@ -1,0 +1,73 @@
+.wbdv-close {
+    color: white;
+}
+.wbdv-new-page-btn {
+    color: white;
+}
+
+
+.wbdv-module-item-title {
+    color : white;
+}
+.wbdv-module-item-delete-btn {
+    float: right;
+    color: white;
+}
+.wbdv-module-item-add-btn {
+    float: right;
+    color: white;
+}
+
+.wbdv-module-item {
+    margin: 10px;
+}
+
+.wbdv-topic-pill {
+    margin: 10px;
+}
+
+
+
+.wbdv-topic-add-btn {
+    margin: 10px;
+}
+
+.wbdv-topic-save {
+    margin: 10px;
+}
+
+.wbdv-topic-toggle {
+    margin-top: 4px;
+}
+
+
+
+.wbdv-topic-edit-cancel-btn {
+    color: red !important;
+}
+
+.wbdv-arrow-link {
+    height: 15px;
+    width: 10px;
+}
+
+.form-group {
+    width : 100%;
+}
+
+.wbdv-topic-widget-div {
+    padding: 10px;
+}
+
+.wbdv-course-add {
+    margin-top: 5px;
+    color: red !important;
+}
+
+.wbdv-topic-edit {
+    margin-left: 8px;
+}
+.wdbv-widget-form {
+    margin-left: 5px;
+    margin-right: 5px;
+}
