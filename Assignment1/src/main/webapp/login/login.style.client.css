@@ -6,3 +6,8 @@ h1 {
 .container {
     max-width: 600px;
 }
+
+#cancelBtn {
+    background-color: red;
+    border-color: red;
+}

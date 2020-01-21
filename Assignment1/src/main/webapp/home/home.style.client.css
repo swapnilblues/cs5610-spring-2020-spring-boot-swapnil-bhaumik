@@ -144,3 +144,7 @@ body {
 .my-float{
     margin-top:22px;
 }
+
+.course-link {
+    cursor: pointer;
+}
