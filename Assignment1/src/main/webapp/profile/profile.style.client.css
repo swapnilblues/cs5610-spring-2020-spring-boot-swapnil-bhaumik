@@ -6,3 +6,13 @@ h1 {
 .container {
     max-width: 600px;
 }
+
+#updateBtn {
+    background-color: green;
+    border-color: green;
+}
+
+#logoutBtn {
+    background-color: red;
+    border-color: red;
+}

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Manager</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          rel="stylesheet"/>
+
+    <link href="course-manager.style.client.css" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/252efb02c3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<a href="#" class="float">
+    <i class="fa fa-plus my-float"></i>
+</a>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu">
+        <span class="navbar-toggler-icon wbdv-field wbdv-hamburger"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbar-menu">
+        <a href="#" class="navbar-brand wbdv-label wbdv-course-manager">Course Manager</a>
+    </div>
+    <ul class="navbar-nav navbar-ul">
+        <li class="nav-item">
+            <input type="text" class="form-control wbdv-field wbdv-new-course" id="heading1"
+                   placeholder="New Course Title">
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">
+                <i class="wbdv-button wbdv-add-course fas fa-plus-circle fa-lg"></i>
+            </a>
+        </li>
+    </ul>
+
+
+</nav>
+
+
+
+
+<div class="container course-heading d-none d-sm-block">
+
+
+
+    <br><br>
+    <div class="row">
+        <div class="col-sm-5">
+            <h7 class="wbdv-header wbdv-title" aria-hidden="true">Title</h7>
+        </div>
+        <div class="col-sm-2">
+            <h7 class="wbdv-row wbdv-owner">Owned by</h7>
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </div>
+        <div class="col-sm-2">
+            <h7 class="wbdv-header wbdv-last-modified">Last modified by me</h7>
+        </div>
+        <div class="col-sm-2">
+            <i class="fas fa-grip-horizontal fa-lg wbdv-button wbdv-grid-layout" aria-hidden="true"></i>
+        </div>
+        <div class="col-sm-1">
+            <i class="fas fa fa-sort-alpha-down wbdv-header wbdv-sort" aria-hidden="true"></i>
+        </div>
+    </div>
+    <br>
+</div>
+
+<div class="container">
+
+
+
+    <br><br>
+    <div class="course-list">
+
+        <br>
+        <div class="row">
+            <div class="col-sm-5">
+                <i class="fas fa-file-alt wbdv-row wbdv-icon"></i>
+                <h7 class="wbdv-row wbdv-title">CS5500 Software Engineering Graduate</h7>
+            </div>
+            <div class="col-sm-2 d-none d-sm-block">
+                <h7 class="wbdv-header wbdv-owner">me</h7>
+            </div>
+            <div class="col-sm-2 d-none d-sm-block">
+                <h7 class="wbdv-row wbdv-modified-date">6:45 PM</h7>
+            </div>
+            <div class="col-sm-2 d-none d-sm-block">
+
+            </div>
+            <div class="col-sm-1">
+                <i class="fas fa-times wbdv-row wbdv-button wbdv-delete"></i>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <div class="course-list">
+        <br>
+        <div class="row">
+            <div class="col-sm-5">
+                <i class="fas fa-file-alt wbdv-row wbdv-icon"></i>
+                <h7 class="wbdv-row wbdv-title">CS4550 Software Engineering Undergraduate</h7>
+            </div>
+            <div class="col-sm-2 d-none d-sm-block">
+                <h7 class="wbdv-row wbdv-owner ">me</h7>
+            </div>
+            <div class="col-sm-2 d-none d-sm-block">
+                <h7 class="wbdv-row wbdv-modified-date d-none d-sm-block">6:45 PM</h7>
+            </div>
+            <div class="col-sm-2 d-none d-sm-block">
+
+            </div>
+            <div class="col-sm-1">
+                <i class="fas fa-times wbdv-row wbdv-button wbdv-delete"></i>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <div class="course-list">
+        <br>
+        <div class="row">
+            <div class="col-sm-5">
+                <i class="fas fa-file-alt wbdv-row wbdv-icon"></i>
+                <h7 class="wbdv-row wbdv-title">CS4500 WebDev Undergraduate</h7>
+            </div>
+            <div class="col-sm-2 d-none d-sm-block">
+                <h7 class="wbdv-row wbdv-owner">me</h7>
+            </div>
+            <div class="col-sm-2 d-none d-sm-block">
+                <h7 class="wbdv-row wbdv-modified-date">6:45 PM</h7>
+            </div>
+            <div class="col-sm-2 d-none d-sm-block">
+
+            </div>
+            <div class="col-sm-1">
+                <i class="fas fa-times wbdv-row wbdv-button wbdv-delete"></i>
+            </div>
+        </div>
+        <br>
+    </div>
+
+
+    <br> <div class="course-list">
+        <br>
+        <div class="row">
+            <div class="col-sm-5">
+                <i class="fas fa-file-alt wbdv-row wbdv-icon"></i>
+                <h7 class="wbdv-row wbdv-title">CS5610 WebDev Graduate</h7>
+            </div>
+            <div class="col-sm-2 d-none d-sm-block">
+                <h7 class="wbdv-row wbdv-owner">me</h7>
+            </div>
+            <div class="col-sm-2 d-none d-sm-block">
+                <h7 class="wbdv-row wbdv-modified-date">6:45 PM</h7>
+            </div>
+            <div class="col-sm-2 d-none d-sm-block">
+
+            </div>
+            <div class="col-sm-1">
+                <i class="fas fa-times wbdv-row wbdv-button wbdv-delete"></i>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <div class="course-list">
+        <br>
+        <div class="row">
+            <div class="col-sm-5">
+                <i class="fas fa-file-alt wbdv-row wbdv-icon"></i>
+                <h7 class="wbdv-row wbdv-title">CS5200 Intro to Databases</h7>
+            </div>
+            <div class="col-sm-2 d-none d-sm-block">
+                <h7 class="wbdv-row wbdv-owner">me</h7>
+            </div>
+            <div class="col-sm-2">
+                <h7 class="wbdv-row wbdv-modified-date">6:45 PM</h7>
+            </div>
+            <div class="col-sm-2 d-none d-sm-block">
+
+            </div>
+            <div class="col-sm-1">
+                <i class="fas fa-times wbdv-row wbdv-button wbdv-delete"></i>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <br>
+    Yesterday
+    <br><br>
+    <div class="course-list">
+        <br>
+        <div class="row">
+            <div class="col-sm-5">
+                <i class="fas fa-file-alt wbdv-row wbdv-icon"></i>
+                <h7 class="wbdv-row wbdv-title">WEBDEV 2 - React</h7>
+                <i class="fas fa-user-friends"></i>
+            </div>
+            <div class="col-sm-2 d-none d-sm-block">
+                <h7 class="wbdv-row wbdv-owner">me</h7>
+            </div>
+            <div class="col-sm-2 d-none d-sm-block">
+                <h7 class="wbdv-row wbdv-modified-date">March 20, 2020</h7>
+            </div>
+            <div class="col-sm-2 d-none d-sm-block">
+
+            </div>
+            <div class="col-sm-1">
+                <i class="fas fa-times wbdv-row wbdv-button wbdv-delete"></i>
+            </div>
+        </div>
+        <br>
+    </div>
+    <br>
+    Previous 7 days
+    <br><br>
+    <div class="course-list">
+        <br>
+        <div class="row">
+            <div class="col-sm-5">
+                <i class="fas fa-file-alt wbdv-row wbdv-icon"></i>
+                <h7 class="wbdv-row wbdv-title">WEBDEV Syllabus</h7>
+                <i class="fas fa-user-friends"></i>
+            </div>
+            <div class="col-sm-2 d-none d-sm-block">
+                <h7 class="wbdv-row wbdv-owner">me</h7>
+            </div>
+            <div class="col-sm-2 d-none d-sm-block">
+                <h7 class="wbdv-row wbdv-modified-date">March 19, 2020</h7>
+            </div>
+            <div class="col-sm-2 d-none d-sm-block">
+
+            </div>
+            <div class="col-sm-1">
+                <i class="fas fa-times wbdv-row wbdv-button wbdv-delete"></i>
+            </div>
+        </div>
+        <br>
+    </div>
+    <div class="course-list">
+        <br>
+        <div class="row">
+            <div class="col-sm-5">
+                <i class="fas fa-file-alt wbdv-row wbdv-icon"></i>
+                <h7 class="wbdv-row wbdv-title">WEBDEV 1 - JavaScript, Java, SQL</h7>
+                <span class="fa-stack">
+
+                     <span class="fa fa-circle-o fa-stack-2x"></span>
+                    <strong class="fa-stack-1x">8</strong>
+                </span>
+                <i class="fas fa-user-friends"></i>
+
+            </div>
+            <div class="col-sm-2 d-none d-sm-block">
+                <h7 class="wbdv-row wbdv-owner">me</h7>
+            </div>
+            <div class="col-sm-2 d-none d-sm-block">
+                <h7 class="wbdv-row wbdv-modified-date">March 19, 2020</h7>
+            </div>
+            <div class="col-sm-2">
+
+            </div>
+            <div class="col-sm-1">
+                <i class="fas fa-times wbdv-row wbdv-button wbdv-delete"></i>
+            </div>
+        </div>
+        <br>
+    </div>
+
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+</html>

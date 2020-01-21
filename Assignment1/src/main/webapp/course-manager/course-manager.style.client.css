@@ -1,0 +1,146 @@
+.wbdv-close {
+    color: white;
+}
+.wbdv-new-page-btn {
+    color: white;
+}
+
+
+.wbdv-module-item-title {
+    color : white;
+}
+.wbdv-module-item-delete-btn {
+    float: right;
+    color: white;
+}
+.wbdv-module-item-add-btn {
+    float: right;
+    color: white;
+}
+
+.wbdv-module-item {
+    margin: 10px;
+}
+
+.wbdv-topic-pill {
+    margin: 10px;
+}
+
+
+
+.wbdv-topic-add-btn {
+    margin: 10px;
+}
+
+.wbdv-topic-save {
+    margin: 10px;
+}
+
+.wbdv-topic-toggle {
+    margin-top: 4px;
+}
+
+
+
+.wbdv-topic-edit-cancel-btn {
+    color: red !important;
+}
+
+.wbdv-arrow-link {
+    height: 15px;
+    width: 10px;
+}
+
+.form-group {
+    width : 100%;
+}
+
+.wbdv-topic-widget-div {
+    padding: 10px;
+}
+
+.wbdv-course-add {
+    margin-top: 5px;
+    color: red !important;
+}
+
+.wbdv-topic-edit {
+    margin-left: 8px;
+}
+.wdbv-widget-form {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.wbdv-add-course {
+    color: red !important;
+}
+
+.wbdv-new-course {
+    width: 300px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.navbar-toggler {
+    margin-right: 5px;
+}
+
+.collapse .navbar-collapse {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.wbdv-course-manager {
+    margin-left: 10px;
+}
+
+.navbar-nav {
+    flex-direction: row;
+}
+
+body {
+    background: lightgrey;
+}
+
+.course-heading {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    border-bottom: 1px solid black;
+}
+
+.row {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.wbdv-icon {
+    color: deepskyblue;
+}
+
+
+.course-list {
+    background-color: white;
+    flex-direction: row;
+    margin-top : 5px;
+}
+
+.float{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color: crimson;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+
+}
+
+.my-float{
+    margin-top:22px;
+}
