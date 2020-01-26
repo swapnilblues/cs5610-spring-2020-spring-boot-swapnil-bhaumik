@@ -19,14 +19,12 @@
         console.log(users[u])
     }
 
-    let $h1 = jQuery("h1")
-    $h1.html("ABC")
-        .css("color", "red")
-
     let $student = $("<h1>Students</h1>")
     let $body = $("body")
     $body.append($student)
     let $userList = $("#userList")
+    let $wbdv_tbody= $(".wbdv-tbody")
+    let $table = $(".table")
     $userList.append("<li>dan</li>")
 
     let $ed = $("<li>")
@@ -59,12 +57,21 @@
 
     const renderUsers = () => {
         $userList.empty()
+        $wbdv_tbody.empty()
         for (let u in users) {
             let $userLi = $(`<li> ${users[u].username} </li>`)
 
             let $deleteBtn = $("<button>Delete</button>")
-            $deleteBtn.click(() => deleteUser(u)
-            )
+            $deleteBtn.click(() => {
+                deleteUser(u)
+                console.log("ff",u)
+            })
+
+            let $deleteBtn1 = $("<button id='wbdv-remove' class='fa-2x fa fa-times wbdv-remove'></button>")
+            $deleteBtn1.click(() => {
+                deleteUser(u)
+                console.log("ff",u)
+            })
 
             let $editBtn = $("<button>Edit</button>")
             $editBtn.click(() => editUser(u)
@@ -72,6 +79,20 @@
             $userLi.append($deleteBtn)
             $userLi.append($editBtn)
             $userList.append($userLi)
+
+            $tr = $("<tr class='wbdv-template wbdv-user wbdv-hidden'>")
+            $tr.append("<td class='wbdv-username'>" + users[u].username + "</td>")
+            $tr.append("<td>*****</td>")
+            $tr.append("<td>" + users[u].firstName + "</td>")
+            $tr.append("<td>" + users[u].lastName + "</td>")
+            $tr.append("<td>" + users[u].role + "</td>")
+            $tr.append("<span class='float-right'>")
+            $tr.append($deleteBtn1)
+            $tr.append("<button id='wbdv-edit' class='fa-2x fa fa-pencil wbdv-edit'></button>")
+            $tr.append("</span>")
+            $tr.append("</td>")
+            $tr.append("</tr>")
+            $wbdv_tbody.append($tr)
         }
     }
 
@@ -88,9 +109,13 @@ findAllUsers()
 
     const createUser = () => {
         const user = {
-            username : $usernameFld.val()
+            username : $usernameFld.val(),
+            password : $passwordFld.val(),
+            firstName : $firstNameFld.val(),
+            lastName : $lastNameFld.val(),
+            role : $roleFld.val()
         }
-        $usernameFld.val("")
+        $usernameFld1.val("")
         userService.createUser(user)
             .then(brandNewUser => {
                 users.push(brandNewUser)
@@ -111,12 +136,19 @@ findAllUsers()
     }
 
 
-    let $createUserBtn = $("#createUser")
+    let $createUserBtn = $(".wbdv-create")
     let $updateUserBtn = $("#updateUser")
     $createUserBtn.click(createUser)
     $updateUserBtn.click(updateUser)
 
+    let $usernameFld1 = $("#usernameFld1")
+
     let $usernameFld = $("#usernameFld")
+    let $passwordFld = $("#passwordFld")
+    let $firstNameFld = $("#firstNameFld")
+    let $lastNameFld = $("#lastNameFld")
+    let $roleFld = $("#roleFld")
+
 })
 
 ()
