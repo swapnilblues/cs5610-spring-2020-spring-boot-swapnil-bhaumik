@@ -19,9 +19,9 @@
         console.log(users[u])
     }
 
-    let $student = $("<h1>Students</h1>")
+    //let $student = $("<h1>Students</h1>")
     let $body = $("body")
-    $body.append($student)
+    //$body.append($student)
     let $userList = $("#userList")
     let $wbdv_tbody= $(".wbdv-tbody")
   //  let $table = $(".table")
@@ -50,17 +50,19 @@
             const user = users[index];
             const _id = user._id;
             currentUser = index
-            console.log(_id)
-            userService.findUserById(_id)
-                .then(user => {
-                    console.log(user)
-                    $usernameFld.val(user.username)
-                    $passwordFld.val(user.password)
-                    $firstNameFld.val(user.firstName)
-                    $lastNameFld.val(user.lastName)
-                    $roleFld.val(user.role)
-                })
-
+            //console.log(_id)
+            // console.log(user._id)
+            // if(user.username !== "") {
+                userService.findUserById(_id)
+                    .then(user => {
+                        console.log(user)
+                        $usernameFld.val(user.username)
+                        $passwordFld.val(user.password)
+                        $firstNameFld.val(user.firstName)
+                        $lastNameFld.val(user.lastName)
+                        $roleFld.val(user.role)
+                    })
+            // }
         }
 
         const renderUsers = () => {
@@ -127,29 +129,47 @@
                 lastName: $lastNameFld.val(),
                 role: $roleFld.val()
             }
-            $usernameFld1.val("")
-            userService.createUser(user)
-                .then(brandNewUser => {
-                    users.push(brandNewUser)
-                    console.log(users)
-                    renderUsers()
-                })
+            $usernameFld.val("")
+            $passwordFld.val("")
+            $lastNameFld.val("")
+            $firstNameFld.val("")
+            $roleFld.val("")
+            if(user.username !== "") {
+                userService.createUser(user)
+                    .then(brandNewUser => {
+                        users.push(brandNewUser)
+                        console.log(users)
+                        renderUsers()
+                    })
+            }
         }
 
         const updateUser = () => {
             let user = users[currentUser]
             user.username = $usernameFld.val()
+            user.password = $passwordFld.val()
+            user.firstName = $firstNameFld.val()
+            user.lastName = $lastNameFld.val()
+            user.role = $roleFld.val()
 
             $usernameFld.val("")
-            userService.updateUser(user._id, user)
-                .then(brandNewUser => {
-                    findAllUsers()
-                })
+            $passwordFld.val("")
+            $lastNameFld.val("")
+            $firstNameFld.val("")
+            $roleFld.val("")
+
+            //console.log("dd",user.username)
+            if(user.username !== "") {
+                userService.updateUser(user._id, user)
+                    .then(brandNewUser => {
+                        findAllUsers()
+                    })
+            }
         }
 
 
         let $createUserBtn = $(".wbdv-create")
-        let $updateUserBtn = $("#updateUser")
+        let $updateUserBtn = $(".wbdv-update")
         $createUserBtn.click(createUser)
         $updateUserBtn.click(updateUser)
 
