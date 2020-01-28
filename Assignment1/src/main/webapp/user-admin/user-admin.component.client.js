@@ -112,7 +112,7 @@
         const renderUser = (user) => {
             let $tr = $("<tr class='wbdv-template wbdv-user wbdv-hidden'>")
             $tr.append("<td class='wbdv-username'>" + user.username + "</td>")
-            $tr.append("<td>*****</td>")
+            $tr.append("<td></td>")
             $tr.append("<td>" + user.firstName + "</td>")
             $tr.append("<td>" + user.lastName + "</td>")
             $tr.append("<td>" + user.role + "</td>")
